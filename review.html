@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>오늘맛집</title>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="images/favicon.png">
+    <!-- 웹폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800|Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean" rel="stylesheet">    <!-- css -->
+    <!-- js -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/review.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/review.css">
+    
+   
+</head>
+<body>
+    <div id="side_nav">
+        <ul class="side_nav_head">
+            <li>오늘맛집</li>
+            <li id="close_btn">X</li>
+        </ul>
+        <ul class="side_nav_menu">
+            <li><a href="login.html"><button>LOGIN</button></a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">먹방티켓</a></li>
+            <li><a href="#">가고싶다</a></li>
+            <li><a href="#">내가 등록한 식당</a></li>
+            <li><a href="#">설정</a></li>
+        </ul>
+    </div>
+    <!-- =====헤더 시작===== -->
+    <div id="wrap">
+        <header class="header">
+            <div class="header_box"></div>
+            <div class="header_flex_items">
+                <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <div id="tgl_btn" class="header_flex_items2">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </header>
+        <!-- =====섹션 시작===== -->
+        <section class="section header_h footer_h">
+            <div class="banner">
+                <div class="logo_tit">
+                    <img src="images/review.png" alt="">
+                </div>
+                <div class="gps_tit">
+                    <div>
+                        <ul id="gps">
+                            <li>현재 지역</li>
+                        </ul>
+                        <ul id="gps2">
+                            <li>관악구</li>
+                            <li><a href="#"><img src="images/v.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="line"></div>
+                <ul>
+                    <li><a href="#">평점순</a></li>
+                    <li><a href="#">리뷰순</a></li>
+                    <li><a href="#">추천순</a></li>
+                    <li><a href="#">위치순</a></li>
+                </ul>
+            <div class="line"></div>
+            </div>
+            <div class="in_box01">
+                <div class="in_box02">
+                    <div>
+                        <img src="images/like.png" alt="">
+                        <p>좋아요</p>
+                    </div>
+                    <a href="#"><img src="images/profile.png" alt="프로필"></a>
+                    <a href="#"><p id="font1">우엉아왜우엉</p></a><br>
+                    <a href="#"><p id="font2">신림역</p></a>
+                    <a href="#"><p id="font3">신림숯불삼겹</p></a>
+                </div>
+                <div id="img_box">
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias atque aspernatur ipsa consectetur asperiores? Facilis hic ullam minus aspernatur omnis fugit at odit quaerat reiciendis, natus, nobis ipsum. Qui, tempore.</p>
+                    <a href="#" id="btn"><p>더보기</p></a>
+                    <a href="#">
+                        <img src="images/food1.jpg" id="img01" alt="음식01">
+                    </a>
+                </div>
+                <div class="bottom">
+                    <ul>
+                        <li class="img_like"></li>
+                        <li><p>좋아요</p></li>
+                        <li><img src="images/chaticon.png" alt="댓글"></li>
+                        <li><p>댓글</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="in_box01_02">
+                <div class="in_box02_02">
+                    <div>
+                        <img src="images/soso.png" alt="">
+                        <p>괜찮아요</p>
+                    </div>
+                    <a href="#"><img src="images/profile.png" alt="프로필"></a>
+                    <a href="#"><p id="font1">우엉아왜우엉</p></a><br>
+                    <a href="#"><p id="font2">사당역</p></a>
+                    <a href="#"><p id="font3">통고기삼겹</p></a>
+                </div>
+                <div id="img_box">
+                    <br>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, recusandae accusantium iure eum aperiam pariatur nulla autem quis quia reprehenderit nisi et? Aspernatur corrupti, quos explicabo ut itaque ipsa possimus?</p>
+                    <a href="#" id="btn"><p>더보기</p></a>
+                    <a href="#">
+                        <img src="images/food2.jpg" id="img01" alt="음식01">
+                    </a>
+                </div>
+                <br>
+                <div class="bottom">
+                    <ul>
+                        <li class="img_like"></li>
+                        <li><p>좋아요</p></li>
+                        <li><img src="images/chaticon.png" alt="댓글"></li>
+                        <li><p>댓글</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="in_box01_03">
+                    <div class="in_box02_03">
+                        <div>
+                            <img src="images/bad.png" alt="">
+                            <p>별로에요</p>
+                        </div>
+                        <a href="#"><img src="images/profile.png" alt="프로필"></a>
+                        <a href="#"><p id="font1">우엉아왜우엉</p></a><br>
+                        <a href="#"><p id="font2">신사역</p></a>
+                        <a href="#"><p id="font3">홍콩반점</p></a>
+                    </div>
+                    <div id="img_box">
+                        <br>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum ipsam maiores voluptatem quasi iure, inventore aliquid eveniet nihil aperiam doloremque autem voluptatum molestiae sunt repellendus voluptates porro, dolorem quas assumenda.</p>
+                        <a href="#" id="btn"><p>더보기</p></a>
+                        <a href="#">
+                            <img src="images/food3.jpg" id="img01" alt="음식01">
+                        </a>
+                    </div>
+                    <br>
+                    <div class="bottom">
+                    <ul>
+                        <li class="img_like"></li>
+                        <li><p>좋아요</p></li>
+                        <li><img src="images/chaticon.png" alt="댓글"></li>
+                        <li><p>댓글</p></li>
+                    </ul>
+                </div>
+                </div>
+            <div class="in_box01_04">
+                    <div class="in_box02_04">
+                        <div>
+                            <img src="images/like.png" alt="">
+                            <p>좋아요</p>
+                        </div>
+                        <a href="#"><img src="images/profile.png" alt="프로필"></a>
+                        <a href="#"><p id="font1">우엉아왜우엉</p></a><br>
+                        <a href="#"><p id="font2">신림역</p></a>
+                        <a href="#"><p id="font3">내가제일잘튀겨</p></a>
+                    </div>
+                    <div id="img_box">
+                        <br>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque accusantium labore quasi error vitae ipsum laudantium pariatur numquam? Quos consequatur voluptas suscipit facilis quasi quas quis inventore aliquid blanditiis modi!</p>
+                        <a href="#" id="btn"><p>더보기</p></a>
+                        <a href="#">
+                            <img src="images/food4.jpg" id="img01" alt="음식01">
+                        </a>
+                    </div>
+                    <br>
+                    <div class="bottom">
+                    <ul>
+                        <li class="img_like"></li>
+                        <li><p>좋아요</p></li>
+                        <li><img src="images/chaticon.png" alt="댓글"></li>
+                        <li><p>댓글</p></li>
+                    </ul>
+                </div>
+                </div>
+        </div>
+                
+        </section>
+
+        <!-- footer -->
+        <footer class="footer">
+            <article class="footer_flex_items">
+                <a href="#"><img src="images/pic_icon.png" alt="pic_icon"></a>
+                <a href="review.html"><img src="images/review_icon.png" alt="review_icon"></a>
+                <a href="index.html"><img src="images/home_icon.png" alt="home_icon"></a>
+                <a href="ticket.html"><img src="images/ticket_icon.png" alt="ticket_icon"></a>
+                <a href="mypage.html"><img src="images/my_icon.png" alt="my_icon"></a>
+            </article>
+        </footer>
+
+    </div>
+</body>
+</html>

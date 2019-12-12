@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>오늘맛집</title>
+
+    <!-- FAVICON 피비콘 -->
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="images/favicon.png">
+
+    <!-- 웹 폰트  -->
+    <!-- font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Nanum Gothic', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800|Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean" rel="stylesheet">
+    
+    <!-- script 자바스크립트/jQuery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    <script src="js/base.js"></script>
+    <script src="js/ticket.js"></script>
+    
+    <!-- css 스타일 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/ticket.css">
+
+
+</head>
+<body>
+    <div id="side_nav">
+        <ul class="side_nav_head">
+            <li>오늘맛집</li>
+            <li id="close_btn">X</li>
+        </ul>
+        <ul class="side_nav_menu">
+            <li><a href="login.html"><button>LOGIN</button></a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">먹방티켓</a></li>
+            <li><a href="#">가고싶다</a></li>
+            <li><a href="#">내가 등록한 식당</a></li>
+            <li><a href="#">설정</a></li>
+        </ul>
+    </div>
+    <div id="wrap">
+        <!-- ======헤더==== -->
+        <header class="header">
+            <div class="header_box"></div>
+            <div class="header_flex_items">
+                <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <div id="tgl_btn" class="header_flex_items2">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </header>
+        <!-- =======섹션====== -->
+        <section class="header_h">
+            <div class="muk_tit">
+                <ul>
+                    <li><img src="images/ticket.png" alt="먹방티켓아이콘"></li>
+                    <li><h1 class="ticket_tit"></h1></li>
+                    <li><a href="#"><img src="images/search_icon.png" alt="먹방검색아이콘"></a></li>
+                </ul>
+            </div>
+            <div class="muk_ticket_box">
+                <div class="muk_ticket">
+                    <div class="muk_t_img">
+                        <img src="images/food01.jpg" alt="일본식회덮밥">
+                        <div class="p_txt">
+                            <p>12,900 원</p>
+                        </div>
+                    </div>
+                    <div class="muk_t_txt">
+                        <div class="zzim"></div>
+                        <h1><a href="#">[신림] 이치에<span> 20%</span></a></h1>
+                        <h3>카이센돈부리-다양한 해산물이 올라간 일본식 회덮밥</h3>
+                    </div>
+                </div>
+                <div class="muk_ticket">
+                    <div class="muk_t_img clearfix">
+                        <img src="images/food04.jpg" alt="치킨스테이크">
+                        <div class="p_txt">
+                            <p>9,900 원</p>
+                        </div>
+                    </div>
+                    <div class="muk_t_txt">
+                        <div class="zzim"></div>
+                        <h1><a href="#">[사당] 빙하의 별<span> 20%</span></a></h1>
+                        <h3>치킨스테이크-오렌지 소스를 곁들인 치킨 스테이크</h3>
+                    </div>
+                </div>
+                <div class="muk_ticket">
+                    <div class="muk_t_img">
+                        <img src="images/food03.jpg" alt="햄버거세트">
+                        <div class="p_txt">
+                            <p>11,000 원</p>
+                        </div>
+                    </div>
+                    <div class="muk_t_txt">
+                        <div class="zzim"></div>
+                        <h1><a href="#">[이수] 수제버거<span> 30%</span></a></h1>
+                        <h3>수제스테이크버거-랜치소스 와 소고기패티가 들어간 버거</h3>
+                    </div>
+                </div>
+                <div class="muk_ticket">
+                    <div class="muk_t_img">
+                        <img src="images/food07.jpg" alt="스테이크2인세트">
+                        <div class="p_txt">
+                            <p>23,000 원</p>
+                        </div>
+                    </div>
+                    <div class="muk_t_txt">
+                        <div class="zzim"></div>
+                        <h1><a href="#">[신림] 힐 사이드 테이블<span> 15%</span></a></h1>
+                        <h3>연말 2인 세트</h3>
+                    </div>
+                </div>
+                <div class="muk_ticket">
+                    <div class="muk_t_img">
+                        <img src="images/food05.jpg" alt="케잌">
+                        <div class="p_txt">
+                            <p>7,500 원</p>
+                        </div>
+                    </div>
+                    <div class="muk_t_txt">
+                        <div class="zzim"></div>
+                        <h1><a href="#">[서울대입구] 하나카페<span> 10%</span></a></h1>
+                        <h3>티라미스케잌-촉촉한 시폰케잌에 진한 크림치즈가 들어간 티라미스 케잌</h3>
+                    </div>
+                </div>
+                <div class="muk_ticket">
+                    <div class="muk_t_img">
+                        <img src="images/food06.jpg" alt="소고기스테이크">
+                        <div class="p_txt">
+                            <p>31,000 원</p>
+                        </div>
+                    </div>
+                    <div class="muk_t_txt">
+                        <div class="zzim"></div>
+                        <h1><a href="#">[서울대입구] 프랑세즈<span> 10%</span></a></h1>
+                        <h3>소고기 스테이크-최고급 한우 스테이크</h3>
+                    </div>
+                </div>
+                <div class="muk_ticket">
+                    <div class="muk_t_img sold_out">
+                        <img src="images/food07.jpg" alt="스테이크3인세트">
+                        <h1 class="imgtxt">매진 되었습니다.</h1>
+                    </div>
+                    <div class="muk_t_txt">
+                        <div class="zzim"></div>
+                        <h1><a href="#">[신림] 힐 사이드 테이블<span> 15%</span></a></h1>
+                        <h3>연말 3인 세트</h3>
+                    </div>
+                </div>
+                <div class="muk_ticket">
+                    <div class="muk_t_img sold_out">
+                        <img src="images/food08.jpg" alt="과일펜케이크">
+                        <h1 class="imgtxt">매진 되었습니다.</h1>
+                    </div>
+                    <div class="muk_t_txt">
+                        <div class="zzim"></div>
+                        <h1><a href="#">[이수] 오후의 과일<span> 10%</span></a></h1>
+                        <h3>계절 과일이 들어간 펜케이크</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="border_hr">
+        <div class="footer_h"></div>
+
+        <!-- =====푸터===== -->
+        <footer class="footer">
+            <article class="footer_flex_items">
+                <a href="#"><img src="images/pic_icon.png" alt="pic_icon"></a>
+                <a href="review.html"><img src="images/review_icon.png" alt="review_icon"></a>
+                <a href="index.html"><img src="images/home_icon.png" alt="home_icon"></a>
+                <a href="ticket.html"><img src="images/ticket_icon.png" alt="ticket_icon"></a>
+                <a href="mypage.html"><img src="images/my_icon.png" alt="my_icon"></a>            </article>
+        </footer>
+    </div>
+</body>
+</html>

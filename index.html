@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>오늘맛집</title>
+
+    <!-- ===파비콘=== -->
+    <link rel="shortcut icon" href="images/favicon.png" type="favicon">
+    <link rel="apple-touch-icon-precomposed" href="images/favicon.png">
+
+    <!-- ===웹폰트=== -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean" rel="stylesheet">
+    
+    <!-- ===javaScript/jQuery=== -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        
+    </script>
+
+    <!-- ===CSS Style=== -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    
+</head>
+<body>
+    <!-- =====side_nav start===== -->
+    <div id="side_nav">
+        <ul class="side_nav_head">
+            <li>오늘맛집</li>
+            <li id="close_btn">X</li>
+        </ul>
+        <ul class="side_nav_menu">
+            <li><a href="login.html"><button>LOGIN</button></a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">먹방티켓</a></li>
+            <li><a href="#">가고싶다</a></li>
+            <li><a href="#">내가 등록한 식당</a></li>
+            <li><a href="#">설정</a></li>
+        </ul>
+    </div>
+    <!-- =====side_nav end===== -->
+    <div id="wrap">
+        <!-- =====haeder start===== -->
+        <header class="header">
+            <div class="header_box"></div>
+            <div class="header_flex_items">
+                <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <div id="tgl_btn" class="header_flex_items2">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </header>
+        <!-- =====haeder end===== -->
+        <!-- =====section start===== -->
+        <div class="app_contents header_h footer_h">
+            <section class="section" id="map">
+                <div class="map_iframe">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d791.4980546340706!2d126.92983148814477!3d37.484509998732136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9f6f31652a33%3A0xbb6770d47a0e8302!2z7Iug66a87JetOOuyiOy2nOq1rA!5e0!3m2!1sko!2skr!4v1574645232736!5m2!1sko!2skr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+                <div class="zone_search">
+                    <div class="zone">
+                        <p class="zone_txt">신림역 근처</p>
+                    </div>
+                    <div class="search_box">
+                        <input class="search_txt" type="text" placeholder="지역명">
+                        <div>
+                            <img class="search_icon" src="images/search_icon.png" alt="돋보기">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="contents">
+                <div>
+                    <ul id="food_kinds">
+                        <li class="active" id="korea_food">한식</li>
+                        <li id="china_food">중식</li>
+                        <li id="japan_food">일식</li>
+                        <li id="western_food">양식</li>
+                        <li id="snack_food">분식</li>
+                        <li id="dessert">디저트</li>
+                    </ul>
+                </div>
+                <div class="content_bottom">
+                    <!-- korea_food -->
+                    <div class="korea_food">
+                        <article class="content_box">
+                            <div class="content">
+                                <a href="#"><img src="images/food/koreanfood01.jpg" alt="koreanfood01"></a>
+                                <div class="content_txt">
+                                    <h1 class="rest_tit">오늘한식당</h1>
+                                    <p class="food_distance">신림역 근처 200m</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="content_box">
+                            <div class="content">
+                                <a href="#"><img src="images/food/koreanfood02.jpg" alt="koreanfood02"></a>
+                                <div class="content_txt">
+                                    <h1 class="rest_tit">가자한식</h1>
+                                    <p class="food_distance">신림역 근처 200m</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="content_box">
+                            <div class="content">
+                                <a href="#"><img src="images/food/koreanfood03.jpg" alt="koreanfood03"></a>
+                                <div class="content_txt">
+                                    <h1 class="rest_tit">게장가자</h1>
+                                    <p class="food_distance">신림역 근처 200m</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="content_box">
+                            <div class="content">
+                                <a href="#"><img src="images/food/koreanfood04.jpg" alt="koreanfood04"></a>
+                                <div class="content_txt">
+                                    <h1 class="rest_tit">뚝배기한식</h1>
+                                    <p class="food_distance">신림역 근처 200m</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="content_box">
+                            <div class="content">
+                                <a href="#"><img src="images/food/koreanfood05.jpg" alt="koreanfood05"></a>
+                                <div class="content_txt">
+                                    <h1 class="rest_tit">비벼비벼</h1>
+                                    <p class="food_distance">신림역 근처 200m</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- china_food -->
+                    <div class="china_food">
+                        <article class="content_box">
+                            <div class="content">
+                                <a href="#"><img src="images/food/chinesefood01.jpg" alt="chinesefood01"></a>
+                                <div class="content_txt">
+                                    <h1 class="rest_tit">차이덮밥</h1>
+                                    <p class="food_distance">신림역 근처 200m</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="content_box">
+                            <div class="content">
+                                <a href="#"><img src="images/food/chinesefood02.jpg" alt="chinesefood02"></a>
+                                <div class="content_txt">
+                                    <h1 class="rest_tit">탕탕탕탕</h1>
+                                    <p class="food_distance">신림역 근처 200m</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="content_box">
+                            <div class="content">
+                                <a href="#"><img src="images/food/chinesefood03.jpg" alt="chinesefood03"></a>
+                                <div class="content_txt">
+                                    <h1 class="rest_tit">볶아볶아</h1>
+                                    <p class="food_distance">신림역 근처 200m</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="content_box">
+                            <div class="content">
+                                <a href="#"><img src="images/food/chinesefood04.jpg" alt="chinesefood04"></a>
+                                <div class="content_txt">
+                                    <h1 class="rest_tit">딤섬머</h1>
+                                    <p class="food_distance">신림역 근처 200m</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="content_box">
+                            <div class="content">
+                                <a href="#"><img src="images/food/chinesefood05.jpg" alt="chinesefood05"></a>
+                                <div class="content_txt">
+                                    <h1 class="rest_tit">보끔</h1>
+                                    <p class="food_distance">신림역 근처 200m</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- japan_food -->
+                    <div class="japan_food">
+                        <article class="content_box">
+                            <div class="content">
+                                <a href="#"><img src="images/food/japanfood01.jpg" alt="japanfood01"></a>
+                                <div class="content_txt">
+                                    <h1 class="rest_tit">가쓰오부시</h1>
+                                    <p class="food_distance">신림역 근처 200m</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="content_box">
+                            <div class="content">
+                                <a href="#"><img src="images/food/japanfood02.jpg" alt="japanfood01"></a>
+                                <div class="content_txt">
+                                    <h1 class="rest_tit">으동</h1>
+                                    <p class="food_distance">신림역 근처 200m</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="content_box">
+                            <div class="content">
+                                <a href="#"><img src="images/food/japanfood03.jpg" alt="japanfood03"></a>
+                                <div class="content_txt">
+                                    <h1 class="rest_tit">스시데스</h1>
+                                    <p class="food_distance">신림역 근처 200m</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="content_box">
+                            <div class="content">
+                                <a href="#"><img src="images/food/japanfood04.jpg" alt="japanfood04"></a>
+                                <div class="content_txt">
+                                    <h1 class="rest_tit">연어다잉</h1>
+                                    <p class="food_distance">신림역 근처 200m</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="content_box">
+                            <div class="content">
+                                <a href="#"><img src="images/food/japanfood05.jpg" alt="japanfood05"></a>
+                                <div class="content_txt">
+                                    <h1 class="rest_tit">텐부리</h1>
+                                    <p class="food_distance">신림역 근처 200m</p>
+                                </div>
+                            </div>
+                        </article>
+                    <!-- japan_food -->
+                    </div>
+                    <!-- western_food -->
+                    <div class="western_food">
+                        <article class="content_box">
+                            <div class="content">
+                                <a href="#"><img src="images/food/westernfood01.jpg" alt="westernfood01"></a>
+                                <div class="content_txt">
+                                    <h1 class="rest_tit">핏짜</h1>
+                                    <p class="food_distance">신림역 근처 200m</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="content_box">
+                            <div class="content">
+                                <a href="#"><img src="images/food/westernfood02.jpg" alt="westernfood02"></a>
+                                <div class="content_txt">
+                                    <h1 class="rest_tit">스테이</h1>
+                                    <p class="food_distance">신림역 근처 200m</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="content_box">
+                            <div class="content">
+                                <a href="#"><img src="images/food/westernfood03.jpg" alt="westernfood03"></a>
+                                <div class="content_txt">
+                                    <h1 class="rest_tit">파스티</h1>
+                                    <p class="food_distance">신림역 근처 200m</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="content_box">
+                            <div class="content">
+                                <a href="#"><img src="images/food/westernfood04.jpg" alt="westernfood04"></a>
+                                <div class="content_txt">
+                                    <h1 class="rest_tit">푸드스티</h1>
+                                    <p class="food_distance">신림역 근처 200m</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="content_box">
+                            <div class="content">
+                                <a href="#"><img src="images/food/westernfood05.jpg" alt="westernfood05"></a>
+                                <div class="content_txt">
+                                    <h1 class="rest_tit">화더덕</h1>
+                                    <p class="food_distance">신림역 근처 200m</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- snack_food -->
+                    <div class="snack_food">
+                        <article class="content_box">
+                            <div class="content">
+                                <a href="#"><img src="images/food/snack01.jpg" alt="snack01"></a>
+                                <div class="content_txt">
+                                    <h1 class="rest_tit">주먹분식</h1>
+                                    <p class="food_distance">신림역 근처 200m</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="content_box">
+                            <div class="content">
+                                <a href="#"><img src="images/food/snack02.jpg" alt="snack02"></a>
+                                <div class="content_txt">
+                                    <h1 class="rest_tit">핫!독</h1>
+                                    <p class="food_distance">신림역 근처 200m</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="content_box">
+                            <div class="content">
+                                <a href="#"><img src="images/food/snack03.jpg" alt="snack03"></a>
+                                <div class="content_txt">
+                                    <h1 class="rest_tit">튀먹분식</h1>
+                                    <p class="food_distance">신림역 근처 200m</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="content_box">
+                            <div class="content">
+                                <a href="#"><img src="images/food/snack04.jpg" alt="snack04"></a>
+                                <div class="content_txt">
+                                    <h1 class="rest_tit">쪼르분식</h1>
+                                    <p class="food_distance">신림역 근처 200m</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="content_box">
+                            <div class="content">
+                                <a href="#"><img src="images/food/snack05.jpg" alt="snack05"></a>
+                                <div class="content_txt">
+                                    <h1 class="rest_tit">떠그분식</h1>
+                                    <p class="food_distance">신림역 근처 200m</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- dessert -->
+                    <div class="dessert">
+                        <article class="content_box">
+                            <div class="content">
+                                <a href="#"><img src="images/food/dessert01.jpg" alt="dessert01"></a>
+                                <div class="content_txt">
+                                    <h1 class="rest_tit">카페201</h1>
+                                    <p class="food_distance">신림역 근처 200m</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="content_box">
+                            <div class="content">
+                                <a href="#"><img src="images/food/dessert02.jpg" alt="dessert02"></a>
+                                <div class="content_txt">
+                                    <h1 class="rest_tit">Cup Of Cup Of</h1>
+                                    <p class="food_distance">신림역 근처 200m</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="content_box">
+                            <div class="content">
+                                <a href="#"><img src="images/food/dessert03.jpg" alt="dessert03"></a>
+                                <div class="content_txt">
+                                    <h1 class="rest_tit">스크리레</h1>
+                                    <p class="food_distance">신림역 근처 200m</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="content_box">
+                            <div class="content">
+                                <a href="#"><img src="images/food/dessert04.jpg" alt="dessert04"></a>
+                                <div class="content_txt">
+                                    <h1 class="rest_tit">CAFE데르</h1>
+                                    <p class="food_distance">신림역 근처 200m</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="content_box">
+                            <div class="content">
+                                <a href="#"><img src="images/food/dessert05.jpg" alt="dessert05"></a>
+                                <div class="content_txt">
+                                    <h1 class="rest_tit">마카롱900</h1>
+                                    <p class="food_distance">신림역 근처 200m</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- =====section end===== -->
+        <!-- =====footer start===== -->
+        <footer class="footer">
+            <article class="footer_flex_items">
+                <a href="#"><img src="images/pic_icon.png" alt="pic_icon"></a>
+                <a href="review.html"><img src="images/review_icon.png" alt="review_icon"></a>
+                <a href="index.html"><img src="images/home_icon.png" alt="home_icon"></a>
+                <a href="ticket.html"><img src="images/ticket_icon.png" alt="ticket_icon"></a>
+                <a href="mypage.html"><img src="images/my_icon.png" alt="my_icon"></a>
+            </article>
+        </footer>
+        <!-- =====footer end===== -->
+
+    </div>
+
+    
+</body>
+</html>

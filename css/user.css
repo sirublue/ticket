@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+#wrap{width:100%;background:#c3c3c3;padding-bottom:30px;position:absolute;right: 0;top: 0;transition: 0.3s;}
+/* sec_profile */
+.profile{display:flex;background:#fff;height:268px;margin-bottom:30px;box-shadow:1px 1px 1px rgba(0, 0, 0, 0.3);padding-top:50px;}
+.my_profile_left{width:50%;display:flex;justify-content:center;align-items:center;}
+.my_profile_left img{width:100%;}
+
+.my_profile_right{width:50%;display:flex;flex-direction:column;justify-content:space-around;}
+.main_big_txt{font-size:26px;font-weight:bold;}
+.my_profile_right span{display:inline-block;font-size:16px;margin-bottom:2.25%;}
+.my_profile_right span:first-child{margin-right:18.89%;}
+.profile ul a{background:#fbb03b;width:41.112%;justify-content:center;align-items:center;display:flex;margin-bottom:5%;height:11.199%;}
+.Modified_btn img{margin-top:10%;}
+.Modified_btn span{font-size:20px;color:white;}
+/* sec_event */
+.my_art_event{background:#fff;height:50px;display:flex;align-items:center;margin-bottom:30px;box-shadow:1px 1px 1px rgba(0, 0, 0, 0.3);}
+.my_art_event span{margin-left:2.222222222222222%;font-size:16px;width:90%;}
+.my_art_event div{width:10%;display:flex;align-items:center;justify-content:center;}
+/* sec_ticket,sec_etc,sec_option */
+.my_art{background:#fff;height:50px;display:flex;align-items:center;margin-bottom:30px;box-shadow:1px 1px 1px rgba(0, 0, 0, 0.3);}
+.my_art span{margin-left:2.222222222222222%;font-size:16px;width:85%;}
+.my_art div:first-child{width:5%;display:flex;align-items:center;justify-content:center;}
+.my_art div:last-child{width:10%;display:flex;align-items:center;justify-content:center;}
+    /* sec_ticket,sec_etc에 사용 */
+.margin_bottom2px{margin-bottom:2px;}
+    /* sec 왼쪽 마진(12px) */
+.left_padding12px{padding-left:12px;}
+    /* sec_option margin_bottom_0 */
+.margin_bottom0{margin-bottom:0;}
+
+/* 태블릿 스타일 */
+@media(min-width:640px){
+/* sec-profile */
+.profile{margin-top:10%;height:536px;}
+.my_profile_left img{width:170%;}
+
+.main_big_txt{font-size:30px;margin-bottom:14.58%;}
+.my_profile_right span{font-size:20px;margin-bottom:14.3%;}
+/* sec_event */
+.my_art_event{height:80px;}
+.my_art_event span{font-size:20px;}
+/* sec_ticket,sec_etc,sec_option */
+.my_art{height:80px;}
+.my_art span{font-size:20px;}
+}

@@ -1,0 +1,91 @@
+body{background: #c3c3c3;}
+#wrap{width:100%;height:100%;background:#c3c3c3;padding-bottom:50px;position: absolute;;right: 0;top: 0;transition: 0.3s;}
+
+/* section style */
+section{width: 100%; background: #c3c3c3;}
+.banner{height: 70px;background: #fff;padding: 4px;}
+.logo_tit{width: 100%; background: #fff;}
+.logo_tit>img{background: #fff;}
+
+.gps_tit{color: #42210b;background: #fff;}
+#gps{line-height: 10px;}
+#gps>li{font-size:10px;}
+#gps2{font-size: 18px;margin-top: -8px;}
+.gps_tit>div>ul>li{display: inline-block;}
+
+.menu>ul{text-align: center;background: #fff;width: 100%;display: flex;justify-content: space-between;}
+.menu>ul>li{color:#42210b;width: 25%;}
+.menu>ul>li:nth-child(1){border-right: 1px solid #42210b;}
+.menu>ul>li:nth-child(2){border-right: 1px solid #42210b;}
+.menu>ul>li:nth-child(3){border-right: 1px solid #42210b;}
+.line{height: 1px; background: #42210b;}
+/* 첫번쨰 박스 */
+.in_box01{background: #fff;margin:2.2222222222%;}
+.in_box01>div>a>img{float:left; margin: 5px;}
+.in_box01>div>a>p{float: left;}
+.in_box01>div>div:first-child{display:inline-block; float: right;padding: 5px;}
+.in_box01>div>div:last-child{display:inline-block;float: right;}
+.in_box01>div>div>p{font-size: 10px;color: #42210b;margin-top: -7px;}
+.in_box02>div>p{text-align: center;}
+/* 두번째 박스 */
+.in_box01_02{background: #fff;margin:2.2222222222%;}
+.in_box01_02>div>a>img{float:left; margin: 5px;}
+.in_box01_02>div>a>p{float: left;}
+.in_box01_02>div>div:first-child{display:inline-block; float: right;padding: 5px;}
+.in_box01_02>div>div:last-child{display:inline-block;float: right;}
+.in_box01_02>div>div>p{font-size: 10px;color: #42210b;margin-top: -7px;}
+.in_box02_02>div>p{text-align: center;}
+
+/* 세번째 박스 */
+.in_box01_03{background: #fff;margin:2.2222222222%;}
+.in_box01_03>div>a>img{float:left; margin: 5px;}
+.in_box01_03>div>a>p{float: left;}
+.in_box01_03>div>div:first-child{display:inline-block; float: right;padding: 5px;}
+.in_box01_03>div>div:last-child{display:inline-block;float: right;}
+.in_box01_03>div>div>p{font-size: 10px;color: #42210b;margin-top: -7px;}
+.in_box02_03>div>p{text-align: center;}
+/* 네번째 박스 */
+.in_box01_04{background: #fff;margin:2.2222222222%}
+.in_box01_04>div>a>img{float:left; margin: 5px;}
+.in_box01_04>div>a>p{float: left;}
+.in_box01_04>div>div:first-child{display:inline-block; float: right;padding: 5px;}
+.in_box01_04>div>div:last-child{display:inline-block;float: right;}
+.in_box01_04>div>div>p{font-size: 10px;color: #42210b;margin-top: -7px;}
+.in_box02_04>div>p{text-align: center;}
+
+.img_like{width: 25px;height: 25px;background:url(../images/likeicon02.png);}
+.img_like.active{width: 25px;height: 25px;background:url(../images/likeicon03.png);}
+
+#font1{font-size: 10px;color:#42210b;margin-top: 8px;}
+#font2{font-size:7px;color:#f15a24;margin:-1px 0;}
+#font3{font-size:14px;color:#f15a24;margin: -5px 3px;}
+#btn>p{color: gray;}
+#img_box p{text-align: left;padding: 5px;}
+#img01{width:100%; margin: 0 auto;}
+.bottom{display: inline-block;margin: 5px;}
+.bottom>ul{display: flex;flex-flow: row nowrap;}
+.bottom>ul>li{padding-right: 5px;}
+.bottom img{width:25px;}
+
+
+@media (min-width: 640px){
+ 
+    .banner{height: 45px;}
+    .logo_tit>img{float: left;overflow: hidden;margin-top: 5px;}
+    #gps{line-height: 16px;}
+    .gps_tit{float: right;overflow: hidden;padding: 0 4px 0 0;}
+    .menu>ul{width: 100%;}
+    .menu>ul>li{width: 25%;}
+    .in_box01{width:46.45555555%; height: 50%; background: #fff;margin:2.2222222222% 1.111111110% 1.111111110% 2.2222222222%;float: left;}
+    .in_box01_02{width:46.45555555%; height: 50%; background: #fff;margin: 2.2222222222% 2.2222222222% 1.111111110% 1.111111110%;float: right;}
+    .in_box01_03{width:46.45555555%; height: 50%; background: #fff;margin:1.111111110% 1.111111110% 60px 2.2222222222%;float: left;}
+    .in_box01_04{width:46.45555555%; height: 50%; background: #fff;margin: 1.111111110% 2.2222222222% 60px 1.111111110% ;float: right;}
+    .in_box02_02>div{margin-right: -3px;}
+    .in_box02_03>div{margin-right: -3px;}
+    
+    #img01{width:80%; margin:10px 0 10px 32px;}
+    #img_box>p{display: none;}
+    #img_box>a>p{display: none;}
+
+    .bottom{display: none;}
+}

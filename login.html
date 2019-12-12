@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>오늘맛집</title>
+
+    <!-- ===파비콘=== -->
+    <link rel="shortcut icon" href="images/favicon.png" type="favicon">
+    <link rel="apple-touch-icon-precomposed" href="images/favicon.png">
+
+    <!-- ===웹폰트=== -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean" rel="stylesheet">
+    
+    <!-- ===javaScript/jQuery=== -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- ===CSS Style===-->
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <!-- ===내부 스타일=== -->
+    <style>
+        body{background: #fbb03b;}
+        #wrap{width: auto;height: 100vh;display: flex;flex-direction: column;justify-content: center;}
+        .logo_box{width: 45.27777777777778%;margin: 73px auto 28px;background: #fbb03b;}
+        .logo_box img{width: 100%;}
+        .id_pass_box>input{font-weight: 500;display: block;border: none;width: 54.44444444444444%;height: 40px;margin: 0 auto;border-radius: 10px;margin-bottom: 8px;padding: 14px 16px;background: #eef4f7;}
+        input#pass_box{margin-bottom: 27px;}
+        button{display: block;margin: 0 auto;border: none;width: 75%;height: 50px;font-size: 24px;font-weight: 500; color: #eef4f7;background: #f15a24;border-radius: 10px;margin-bottom: 23px;}
+        button:active{color: #f15a24;background: #eef4f7;}
+        input::placeholder{color: #fbb03b;}
+        .find_join{width: 75%;margin: 0 auto;padding-bottom: 119px;}
+        .find_join>p:first-child{float: left;}
+        .find_join>p:last-child{float: right;}
+        .find_join p{color: #eef4f7;font-weight: 500;display: inline-block;}
+        .find_join a{color: #eef4f7;font-weight: 500;border-bottom: 1px solid #eef4f7;font-size: 14px;}
+        .privacy{text-align: center;margin-bottom: 16px;}
+        .privacy a{color: #42210b;border-bottom: 1px solid #42210b;font-size: 12px;}
+
+
+        /* ===========640px 이상 스타일=========== */
+        @media(min-width: 640px){
+            .container{width:100%;display: flex;justify-content :space-around;align-items:center;margin: 50px 0;}
+            .logo_box{width:25%;margin: 0 auto;}
+            .info_box{width:65%;align-items:center;}
+            .find_join{padding-bottom: 0;}
+        }
+    </style>
+
+</head>
+<body>
+    <div id="wrap">
+        <div class="container">
+            <div class="logo_box">
+                <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <div class="info_box">
+                <div class="id_pass_box">
+                    <input id="id_box" type="text" placeholder="ID">
+                    <input id="pass_box" type="password" placeholder="PASSWORD">
+                </div>
+                <div class="login_box">
+                    <button id="login_btn">LOGIN</button>
+                    <div class="find_join clearfix">
+                        <p><a href="#">ID 찾기</a> / <a href="#">PASSWORD 찾기</a></p>
+                        <p><a href="#">회원가입하기</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container02">
+            <div class="privacy_box">
+                <p class="privacy"><a href="#">개인정보이용약관방침</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
